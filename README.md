@@ -1,1 +1,1 @@
-![alt text](https://github.com/IF-095DevOps/eSchool/blob/master/demo.jpg)
+![alt text](https://github.com/Malyna23/Demo3/blob/master/cluster.jpg)
