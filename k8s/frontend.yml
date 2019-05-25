@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: gcr.io/devops-235618/nginx:latest
+        image: gcr.io/my-project-d3-240508/nginx:latest
         readinessProbe:
           httpGet:
             path: /

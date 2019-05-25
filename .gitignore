@@ -6,3 +6,7 @@
 terraform.tfstate.backup
 terraform.tfstate
 .terraform.tfstate.lock.info
+ansible/.ssh/
+*.pem
+*.pub
+*.json

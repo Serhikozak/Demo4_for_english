@@ -85,8 +85,8 @@ ng build --prod
 mkdir /home/centos/eschool
 cp -R /var/lib/jenkins/workspace/job_frontend/dist/eSchool/*  /home/centos/eschool
 docker build -t nginx -f Dockerfile1 .
-docker tag nginx  gcr.io/devops-235618/nginx:latest
-gcloud docker -- push gcr.io/devops-235618/nginx
+docker tag nginx  gcr.io/my-project-d3-240508/nginx:latest
+gcloud docker -- push gcr.io/my-project-d3-240508/nginx
 kubectl apply -f /home/centos/k8s/frontend.yml
 kubectl apply -f /home/centos/k8s/service_frontend.yml
 </execCommand>

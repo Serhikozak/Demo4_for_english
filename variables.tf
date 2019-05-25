@@ -3,7 +3,7 @@ variable "key" {
 }
 
 variable "project" {
-  default = "devops-235618"
+  default = "my-project-d3-240508"
 }
 
 variable "region" {
@@ -41,12 +41,12 @@ variable "ip_cidr_range_private" {
 
 variable "public_key_path" {
   description = "Path to file containing public key"
-  default     = ".ssh/devops095.pub"
+  default     = "ansible/.ssh/devops095.pub"
 }
 
 variable "private_key_path" {
   description = "Path to file containing private key"
-  default     = ".ssh/devops095_ossh.pem"
+  default     = "ansible/.ssh/devops095_ossh.pem"
 }
 
 //Database variable

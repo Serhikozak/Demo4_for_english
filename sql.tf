@@ -1,5 +1,9 @@
+#resource "random_id" "db_name_id" {
+  #byte_length = 4
+
+#}
 resource "google_sql_database_instance" "instance" {
-    name               = "${var.project}-db-instance18"
+    name               = "${var.project}-db-instance20"
     region             = "${var.region}"
     database_version   = "${var.database_version}"
 

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app1
-        image: gcr.io/devops-235618/app1:latest
+        image: gcr.io/my-project-d3-240508/app1:latest
         readinessProbe:
           httpGet:
             path: /
@@ -26,7 +26,7 @@ spec:
       - name: cloudsql-proxy
         image: gcr.io/cloudsql-docker/gce-proxy:1.11
         command: ["/cloud_sql_proxy", "--dir=/cloudsql",
-                  "-instances=devops-235618:us-central1:devops-235618-db-instance18=tcp:3306",
+                  "-instances=my-project-d3-240508:us-central1:my-project-d3-240508-db-instance20=tcp:3306",
                   "-credential_file=/secrets/cloudsql/credentials.json"]
         volumeMounts:
           - name: cloudsql-instance-credentials

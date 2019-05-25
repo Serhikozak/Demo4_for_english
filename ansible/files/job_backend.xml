@@ -125,8 +125,8 @@ sudo cp /tmp/ansible/files/application.properties /home/centos
                   <patternSeparator>[, ]+</patternSeparator>
                   <execCommand>docker build -t app1 .
 gcloud auth activate-service-account --key-file /tmp/ansible/.ssh/devops-eb6d149e8256.json
-docker tag app1  gcr.io/devops-235618/app1:latest
-gcloud docker -- push gcr.io/devops-235618/app1:latest
+docker tag app1  gcr.io/my-project-d3-240508/app1:latest
+gcloud docker -- push gcr.io/my-project-d3-240508/app1:latest
 gcloud config set compute/zone us-central1
 gcloud container clusters get-credentials my-gke-cluster
 kubectl create secret generic cloudsql-instance-credentials --from-file=credentials.json=/tmp/ansible/.ssh/devops-eb6d149e8256.json
